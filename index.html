@@ -1,12 +1,214 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Practice Code</title>
+    <title>Factorial Calculator</title>
+    <style>
+        h1{
+            background-image: url('background-image.jpg'); /* Change 'background-image.jpg' to the path of your image */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .container {
+            margin: 50px auto;
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>Practice Code</h1>
+    <div class="container">
+        <h1>Factorial Calculator</h1>
+        <p>This program calculates the factorial of a given number.</p>
+        <pre>
+            <!-- Output from the Java program will be inserted here -->
+            <!-- Replace this with the output of your Java program -->
+            Factorial of 5 = 120
+        </pre>
+    </div>
 </body>
+</html>
 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Text formatting tags</title>
+    </head>
+    <body style="align-items: center; text-align: center;" >
+       <h1>To illustrate text formatting tags</h1><hr>
+       <marquee behavior="top" direction="right to left">This is an alternate Marquee text</marquee> 
+       <p>This is <i>italized</i></p>
+       <p>This is <u>Underlined</u></p>
+       <p>Thisa is <b>bold</b></p>
+       <p>This is <em>emphasized</em></p>
+       <p>This is <strong>Strong</strong>text</p>
+       <p>This is <s>striked text</s></p>
+       <p>This is <code>computer code</code></p>
+       <P> This is <sup>superscript</sup> code</P>
+       <p>This is <sub>subscript</sub> code</p>
+       <P>This is <big>big</big> text</P>
+       <p>This is <small>small</small> text</p>
+    </body>
+    </html>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table</title>
+</head>
+<body>
+    <table border="2px solid Black">
+        <tr>
+            <th colspan="4">Table Heading cell Spanning 4 Columns</th>
+        </tr>
+        <tr>
+            <td>Normal cell</td>
+            <td colspan="2">Cell spanning 2 columns</td>
+            <td>Normal cell</td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="background: gray;">Cell spanning 3 <br> row with a gray <br>(US spelling) <br> background</td>
+            <td>Normal cell</td>
+            <td>Normal cell</td>
+            <td>Normal cell</td>
+        </tr>
+        <tr>
+            <td>Normal cell</td>
+            <td colspan="2" rowspan="2">Cell spanning 2 row and 2 <br> column</td>
+        </tr>
+        <tr>
+            <td>Normal Cell</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested List</title>
+    <html>
+<body>
+<h5>An ordered List</h5>
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <ol type="a">
+        <li>Black tea</li>
+        <li>Green tea</li>
+        <ol type="i">
+            <li>China</li>
+            <li>Africa</li>
+        </ol>
+    </ol>
+    <li>Milk</li>
+</ol>
+
+<h5>A Definition List:</h5>
+<ul style="text-decoration: none;">
+   <li>Bangalore</li>
+   <ul style="text-decoration: none;">
+    <li>-Capital City of Kamataka</li>
+   </ul>
+   <li>Mumbai</li>
+   <ul style="text-decoration: none;">
+    <li>-Capital City of Maharashtra</li>
+   </ul>
+</ul>
+</body>
+</html>
+
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <fieldset>
+            <legend>Academic information</legend>
+            <label>Degree:</label>
+            <select id="Degree" name="Degree">
+            <option value ="" >master of business administration</option></select><br>
+            <label>Student ID:</label>
+            <input type="text" name="Student ID"><br>
+            <label>Classes Attended:</label>
+            <input type="text" name="Classes Attended">
+            </fieldset>
+            <fieldset>
+            <legend>Personal detail</legend>
+            <label>First name:</label>
+            <input type="text" name="First name"><br>
+            <label>Last name:</label>
+            <input type="text" name="Last name">
+            </fieldset>
+            <div>
+                Gender:
+                <input type="radio" name="Male" value="Male">Male
+                <input type="radio" name="Female" value="Female">Female
+            </div>
+            <label>Email:</label>
+            <input type="text" name="Email"><br>
+            <p>
+            <textarea>TERM AND CONDITIONS...</textarea><br></p>
+            <div>
+                Gender:
+                <input type="submit" value="send form">
+                <input type="submit" value="clear form">
+            </div>
+        </form>
+    </body>
+</html>
+
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <form>
+            <table border="1">
+                <thead>
+                    <tr>
+                    <th colspan="2"><b>Piza Shop 2.0</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td colspan="2"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Piza topping</td>
+                        <td colspan="2"><input type="radio" name="Supreme">Supreme<br>
+                            <input type="radio" name="Vegeterian">Vegeterian<br>
+                            <input type="radio" name="Hawaiiana">Hawaiiana</td>
+                    </tr>
+                    <tr>
+                        <td>Piza Saucce</td>
+                        <td colspan="2"><select id="" name="">
+                            <option value ="" >Tomato</option></select></td>
+                    </tr>
+                    <tr>
+                        <td>Optional Extrass</td>
+                        <td colspan="2"><input type="checkbox" name="Extra cheese">Extra cheese
+                            <input type="checkbox" name="Gluten free base">Gluten free base</td>
+                    </tr>
+                    <tr>
+                            <td colspan="2"> Delivary instruction:<br> <textarea></textarea>   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Send my Order"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
 </html>
